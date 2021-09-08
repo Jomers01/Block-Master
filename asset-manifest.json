@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/Jomers01/Block-Master.git/static/js/main.a5c784b4.chunk.js",
-    "main.js.map": "/Jomers01/Block-Master.git/static/js/main.a5c784b4.chunk.js.map",
-    "runtime-main.js": "/Jomers01/Block-Master.git/static/js/runtime-main.3d9034be.js",
-    "runtime-main.js.map": "/Jomers01/Block-Master.git/static/js/runtime-main.3d9034be.js.map",
-    "static/js/2.3666f14f.chunk.js": "/Jomers01/Block-Master.git/static/js/2.3666f14f.chunk.js",
-    "static/js/2.3666f14f.chunk.js.map": "/Jomers01/Block-Master.git/static/js/2.3666f14f.chunk.js.map",
-    "index.html": "/Jomers01/Block-Master.git/index.html",
-    "static/js/2.3666f14f.chunk.js.LICENSE.txt": "/Jomers01/Block-Master.git/static/js/2.3666f14f.chunk.js.LICENSE.txt"
+    "main.js": "/Block-Master/static/js/main.a5c784b4.chunk.js",
+    "main.js.map": "/Block-Master/static/js/main.a5c784b4.chunk.js.map",
+    "runtime-main.js": "/Block-Master/static/js/runtime-main.13693808.js",
+    "runtime-main.js.map": "/Block-Master/static/js/runtime-main.13693808.js.map",
+    "static/js/2.13a23a58.chunk.js": "/Block-Master/static/js/2.13a23a58.chunk.js",
+    "static/js/2.13a23a58.chunk.js.map": "/Block-Master/static/js/2.13a23a58.chunk.js.map",
+    "index.html": "/Block-Master/index.html",
+    "static/js/2.13a23a58.chunk.js.LICENSE.txt": "/Block-Master/static/js/2.13a23a58.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.3d9034be.js",
-    "static/js/2.3666f14f.chunk.js",
+    "static/js/runtime-main.13693808.js",
+    "static/js/2.13a23a58.chunk.js",
     "static/js/main.a5c784b4.chunk.js"
   ]
 }
