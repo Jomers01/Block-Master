@@ -2,7 +2,7 @@
   "name": "block_master",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/Jomers01/Block-Master.git",
+  "homepage": "https://jomers01.github.io/Block-Master",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",

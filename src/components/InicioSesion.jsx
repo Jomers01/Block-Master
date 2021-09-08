@@ -17,12 +17,12 @@ export default class InicioSesion extends Component {
         }
     }
 
-    componentDidMount(){
-        let local = JSON.parse(localStorage.getItem('login'));
-        if (local.length) {
-            this.props.history.push('/peliculas')
-        }
-    }
+    // componentDidMount(){
+    //     let local = JSON.parse(localStorage.getItem('login'));
+    //     if (local.length) {
+    //         this.props.history.push('/peliculas')
+    //     }
+    // }
 
     //Funcion para capturar los cambios y capturarlos
     handleChange = async e =>{
