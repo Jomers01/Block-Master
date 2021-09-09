@@ -25,12 +25,12 @@ export default class Registrarse extends Component {
         }
     }
 
-    componentDidMount(){
-        let local = JSON.parse(localStorage.getItem('login'));
-        if (local.length === false) {
-            this.props.history.push('/')
-        }
-    }
+    // componentDidMount(){
+    //     let local = JSON.parse(localStorage.getItem('login'));
+    //     if (local.length === false) {
+    //         this.props.history.push('/')
+    //     }
+    // }
 
     //Funcion para capturar los cambios y capturarlos
     handleChange = async e =>{
@@ -89,7 +89,7 @@ export default class Registrarse extends Component {
                 //actualizo el estado de mi logion con la info del nuevo usuario registrado
                 this.state.login.push(verf2);
                 localStorage.setItem('login', JSON.stringify(this.state.login))
-                this.props.history.push('/');
+                this.props.history.push('/peliculas');
             }
 
         //Si no le digo que esta vacio los campos
@@ -114,7 +114,7 @@ export default class Registrarse extends Component {
                     <Button type="submit" onClick={this.registroUsuario}>Registrarse</Button>
                 </form>
                 <DivFo>
-                    <Link to="/"><Span>¿Ya tienes cuenta?</Span></Link>
+                    <Link to="/Block-Master"><Span>¿Ya tienes cuenta?</Span></Link>
                 </DivFo>
             </Div>
         )
