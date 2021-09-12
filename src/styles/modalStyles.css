@@ -1,0 +1,67 @@
+.hola{
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.bodymodal{
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.footermodal{
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.btnmodal{
+    position: absolute;
+    right: 0;
+    margin-right: 13px;
+    margin-bottom: 10px;
+    background-color: red;
+    border: none;
+}
+
+.title-h3{
+    color: white;
+    font-size: 29px;
+    margin-top: 20px;
+    margin-left: 18px;
+}
+
+.container-div{
+    display: flex;
+    box-sizing: border-box;
+}
+
+.poster{
+    display: flex;
+    flex-direction: column;
+}
+
+.editar, .borrar{
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    background-color: orangered;
+    font-family: 'Inter';
+    font-size: 19px;
+}
+
+.p-overview{
+    color: white;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: 18px;
+    width: 500px;
+}
+
+.trailer{
+    margin-left: 18px;
+}
+
+@media (max-width: 640px){
+    .container-div{
+        display: flex;
+        flex-direction: column;
+    }
+
+}

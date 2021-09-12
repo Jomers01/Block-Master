@@ -25,12 +25,14 @@ export default class Registrarse extends Component {
         }
     }
 
-    // componentDidMount(){
-    //     let local = JSON.parse(localStorage.getItem('login'));
-    //     if (local.length === false) {
-    //         this.props.history.push('/')
-    //     }
-    // }
+    componentDidMount(){  
+        let local = JSON.parse(localStorage.getItem('login'));
+        if (local === null) {
+            localStorage.setItem('login', "[]")
+        }else if (local.length) {
+            this.props.history.push('/peliculas')
+        }
+    }
 
     //Funcion para capturar los cambios y capturarlos
     handleChange = async e =>{
@@ -54,7 +56,7 @@ export default class Registrarse extends Component {
         const usr = await resp.json()
         
         //Validamos que todos los campos esten llenos
-        if (this.state.form.nombre, this.state.form.apellido, this.state.form.email, this.state.form.phone, this.state.form.clave !== '') {
+        if (this.state.form.nombre !== '' && this.state.form.apellido !== '' && this.state.form.email !== '' && this.state.form.phone !== '' && this.state.form.clave !== '') {
             //recorro la API verificando si hay un correo igual
             let verf = usr.find(usrs => usrs.email.toLowerCase() === this.state.form.email.toLowerCase())
 

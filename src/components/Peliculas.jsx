@@ -4,41 +4,39 @@ import Movies from "./Movies";
 
 const Peliculas = ({busqueda, cat2}) => {
   const [movies, setMovies] = useState([]);
+
   const url = "https://block-master-jomers.herokuapp.com/peliculas?title_like=";
 
   useEffect(() => {
-    obtenerDatos();
+    fetch(`${url}${busqueda}`)
+    .then(response => response.json())
+    .then(resp => setMovies(resp))
+    .catch(err=> console.log(err))
   }, [busqueda]);
-
-  const obtenerDatos = async () => {
-    const data = await fetch(`${url}${busqueda}`);
-    const peli = await data.json();
-    setMovies(peli);
-  };
 
   return (
     <div>
       <H1>Todas las peliculas</H1>
       <Div>
           {   
-              cat2 == 'todas'? 
+              cat2 === 'todas'? 
                 movies.map(movie =>(
                   <Movies
                     key={movie.id}
-                    item={movie}
+                    peli={movie}
                   />
                 ))
-                :cat2 == 'top'?
+                :cat2 === 'top'?
                 movies.filter(vote =>vote.vote_average > 5).map(movie => (
                   <Movies
                     key={movie.id}
-                    item={movie}
+                    peli={movie}
                   />
                 ))
                 :movies.filter(vote =>vote.vote_average < 5).map(movie => (
                   <Movies
                     key={movie.id}
-                    item={movie}
+                    peli={movie}
                   />
                 ))
           }

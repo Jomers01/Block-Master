@@ -17,12 +17,14 @@ export default class InicioSesion extends Component {
         }
     }
 
-    // componentDidMount(){
-    //     let local = JSON.parse(localStorage.getItem('login'));
-    //     if (local.length) {
-    //         this.props.history.push('/peliculas')
-    //     }
-    // }
+    componentDidMount(){  
+        let local = JSON.parse(localStorage.getItem('login'));
+        if (local === null) {
+            localStorage.setItem('login', "[]")
+        }else if (local.length) {
+            this.props.history.push('/peliculas')
+        }
+    }
 
     //Funcion para capturar los cambios y capturarlos
     handleChange = async e =>{
@@ -41,7 +43,7 @@ export default class InicioSesion extends Component {
         const usrs = await resp.json()
 
         //Si lleno todos los campos
-        if (this.state.form.email, this.state.form.clave !== '') {
+        if (this.state.form.email !== '' && this.state.form.clave !== '') {
             //Verifico que el usuario y correo sean correctos
             let verf = usrs.find(usr => usr.email.toLowerCase() === this.state.form.email.toLowerCase() && usr.clave === md5(this.state.form.clave))
             //Si el usuario y clave son correctos

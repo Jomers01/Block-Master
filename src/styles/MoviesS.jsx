@@ -4,7 +4,6 @@ export const Div = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    overflow-x: hidden;
     width: 95%;
 `
 
@@ -32,4 +31,8 @@ export const H1 = styled.h1`
     color: white;
     font-family: 'Inter';
     margin-left: 95px;
+`
+
+export const App = styled.div`
+    overflow-x: hidden;
 `
