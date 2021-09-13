@@ -16,7 +16,7 @@ const Movies = ({peli}) => {
     
 
     const mostrarTrailer = (tr)=>{
-        const urlTrailers = `https://api.themoviedb.org/3/movie/${tr.id}/videos?api_key=0ca79cfff3d14ef15bb56bac5dad90f8&language=es-ES`
+        const urlTrailers = `https://api.themoviedb.org/3/movie/${tr.id}/videos?api_key=0ca79cfff3d14ef15bb56bac5dad90f8&language=us-US`
         fetch(urlTrailers)
         .then(resp => resp.json())
         .then(respp => {
@@ -48,7 +48,7 @@ const Movies = ({peli}) => {
 
     return (
         <DivIm onClick={mostrarDetalle}>
-            <Span><img src="https://i.ibb.co/kK3Ljn2/estrella.png" alt="..." width="14px" />{peli.vote_average}</Span>
+            <Span style={(peli.vote_average >= 8)?({"border": "3px solid green", "borderLeftStyle": "none"}):(peli.vote_average > 5)?({"border": "3px solid yellow", "borderLeftStyle": "none"}):({"border": "3px solid red", "borderLeftStyle": "none"})}><img src="https://i.ibb.co/kK3Ljn2/estrella.png" alt="..." width="14px" />{peli.vote_average}</Span>
             <img src={"https://image.tmdb.org/t/p/w500/" + peli.poster_path} id={peli.id} alt="" width="250px" />
 
 

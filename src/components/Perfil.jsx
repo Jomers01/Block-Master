@@ -52,7 +52,7 @@ const Perfil = () => {
         .then(usr => {
             setPerfil(usr.find(u => u.id === usuario[0].id))
         })
-    }, [])
+    }, [usuario])
 
     return (
         <Div>
