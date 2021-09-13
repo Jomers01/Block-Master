@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/Block-Master/static/css/main.b1146bb8.chunk.css",
-    "main.js": "/Block-Master/static/js/main.fc200ff2.chunk.js",
-    "main.js.map": "/Block-Master/static/js/main.fc200ff2.chunk.js.map",
+    "main.js": "/Block-Master/static/js/main.104d4950.chunk.js",
+    "main.js.map": "/Block-Master/static/js/main.104d4950.chunk.js.map",
     "runtime-main.js": "/Block-Master/static/js/runtime-main.13693808.js",
     "runtime-main.js.map": "/Block-Master/static/js/runtime-main.13693808.js.map",
     "static/css/2.53150396.chunk.css": "/Block-Master/static/css/2.53150396.chunk.css",
-    "static/js/2.ec64de61.chunk.js": "/Block-Master/static/js/2.ec64de61.chunk.js",
-    "static/js/2.ec64de61.chunk.js.map": "/Block-Master/static/js/2.ec64de61.chunk.js.map",
+    "static/js/2.c680a70d.chunk.js": "/Block-Master/static/js/2.c680a70d.chunk.js",
+    "static/js/2.c680a70d.chunk.js.map": "/Block-Master/static/js/2.c680a70d.chunk.js.map",
     "index.html": "/Block-Master/index.html",
     "static/css/2.53150396.chunk.css.map": "/Block-Master/static/css/2.53150396.chunk.css.map",
     "static/css/main.b1146bb8.chunk.css.map": "/Block-Master/static/css/main.b1146bb8.chunk.css.map",
-    "static/js/2.ec64de61.chunk.js.LICENSE.txt": "/Block-Master/static/js/2.ec64de61.chunk.js.LICENSE.txt"
+    "static/js/2.c680a70d.chunk.js.LICENSE.txt": "/Block-Master/static/js/2.c680a70d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.13693808.js",
     "static/css/2.53150396.chunk.css",
-    "static/js/2.ec64de61.chunk.js",
+    "static/js/2.c680a70d.chunk.js",
     "static/css/main.b1146bb8.chunk.css",
-    "static/js/main.fc200ff2.chunk.js"
+    "static/js/main.104d4950.chunk.js"
   ]
 }
