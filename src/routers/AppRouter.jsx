@@ -14,7 +14,7 @@ export default class AppRouter extends Component {
         return (
             <Router>
                 <Switch>
-                    <Route exact path="/Block-Master"  component={InicioSesion} />
+                    <Route exact path="/block-master"  component={InicioSesion} />
                     <Route exact path="/registro" component={Registrarse} />
                     <Route exact path="/peliculas" component={AppBlock} />
                     <Route exact path="/perfil" component={Perfil} />
