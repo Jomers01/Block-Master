@@ -116,7 +116,7 @@ export default class Registrarse extends Component {
                     <Button type="submit" onClick={this.registroUsuario}>Registrarse</Button>
                 </form>
                 <DivFo>
-                    <Link to="/Block-Master"><Span>¿Ya tienes cuenta?</Span></Link>
+                    <Link to="/block-master"><Span>¿Ya tienes cuenta?</Span></Link>
                 </DivFo>
             </Div>
         )

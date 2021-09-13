@@ -17,7 +17,7 @@ const NavBar = ({estado, cat}) => {
 
     const cerrarSesion = () =>{
         localStorage.setItem('login', "[]")
-        window.location.assign("Block-Master")
+        window.location.assign("block-master")
     }
 
     return (

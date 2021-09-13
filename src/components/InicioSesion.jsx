@@ -77,7 +77,6 @@ export default class InicioSesion extends Component {
                     <Input type="text" placeholder="Correo Electronico" name="email" onChange={this.handleChange} />
                     <Input type="password" placeholder="Contraseña" name="clave" onChange={this.handleChange} />
                     <ButtonIni onClick={this.iniciarSesion}><img src="https://i.ibb.co/ygrkxxW/flecha-correcta.png" alt="" /></ButtonIni>
-                    <P><Link to="/"><A>¿Has olvidado tu contraseña?</A></Link></P>
                 </DivCred>
                 <DivFo>
                     <P>Aun no estas registrado. <Link to="/registro"><A>Click aqui!</A></Link></P>
