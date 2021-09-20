@@ -4,8 +4,11 @@ import { Button, Modal, ModalBody } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import '../styles/modalStyles.css'
 import axios from 'axios';
+import { useHistory } from 'react-router-dom';
 
 const Movies = ({peli}) => {
+
+    const history = useHistory()
 
     const [abierto, setabierto] = useState(false)
     const [des, setdes] = useState([])
@@ -43,7 +46,6 @@ const Movies = ({peli}) => {
                 alert("Borrado")
                 window.location.assign("peliculas")
             })
-            
     }
 
     return (
